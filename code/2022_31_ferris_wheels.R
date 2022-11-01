@@ -32,7 +32,7 @@ wheels_plot <- wheels %>%
 #########
 # plot! #
 #########
-theme_set(theme_minimal(base_size = 14, base_family = "Segoe Print"))
+theme_set(theme_minimal(base_size = 14, base_family = "TT Arial"))
 
 wheels_plot %>%
   group_by(country) %>%
@@ -53,6 +53,7 @@ wheels_plot %>%
     axis.text.x = element_text(color = "grey60", face = "bold"),
     plot.title = ggtext::element_markdown(colour = "White"),
     plot.subtitle = ggtext::element_markdown(colour = "White", size = 12),
+    plot.background = element_rect(fill = "Black"),
     plot.title.position = "plot",
     plot.caption = element_text(color = "gray60",
                                 face = "italic"),
